@@ -1,7 +1,5 @@
 import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/navigation';
-import { EffectCoverflow, Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import img3 from '../assets/img3.png';
@@ -29,21 +27,13 @@ export const FeaturedProperties = () => {
       {/* Swiper Section */}
       <div className="max-w-7xl mx-auto relative group px-4">
         <Swiper
-          modules={[Navigation, EffectCoverflow]}
-          effect={'coverflow'}
+          modules={[Navigation]}
           grabCursor={true}
-          centeredSlides={true}
-          loop={true}
+          centeredSlides={false}
+          loop={false}
           initialSlide={0}
           slidesPerView={'auto'}
-          spaceBetween={60}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 30,
-            modifier: 1,
-            slideShadows: false,
-          }}
+          spaceBetween={40}
           navigation={{
             nextEl: '.swiper-button-next-custom',
             prevEl: '.swiper-button-prev-custom',
@@ -67,15 +57,19 @@ export const FeaturedProperties = () => {
           <SwiperSlide className="w-full max-w-[280px] md:max-w-[400px]">
              <PropertyCard />
           </SwiperSlide>
+
+          <SwiperSlide className="w-full max-w-[280px] md:max-w-[400px]">
+             <PropertyCard />
+          </SwiperSlide>
         </Swiper>
         
         {/* Custom Navigation Buttons */}
-        <div className="swiper-button-prev-custom absolute top-1/2 -left-4 md:-left-12 z-10 w-12 h-12 bg-[#111827] rounded-full flex items-center justify-center cursor-pointer text-white -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black">
+        <div className="swiper-button-prev-custom absolute top-1/2 left-4 md:left-32 z-10 w-12 h-12 bg-[#111827] rounded-full flex items-center justify-center cursor-pointer text-white -translate-y-1/2 transition-opacity hover:bg-black">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
         </div>
-        <div className="swiper-button-next-custom absolute top-1/2 -right-4 md:-right-12 z-10 w-12 h-12 bg-[#111827] rounded-full flex items-center justify-center cursor-pointer text-white -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black">
+        <div className="swiper-button-next-custom absolute top-1/2 right-4 md:right-32 z-10 w-12 h-12 bg-[#111827] rounded-full flex items-center justify-center cursor-pointer text-white -translate-y-1/2 transition-opacity hover:bg-black">
              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
             </svg>
