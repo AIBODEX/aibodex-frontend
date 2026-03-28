@@ -4,7 +4,7 @@ import Logo  from '../assets/logo.svg';
 
 export const Navbar = () => {
   const navLinks = [
-    { name: 'Home', path: '/' },
+    { name: 'Home', path: '/home' },
     { name: 'About us', path: '/about' },
     { name: 'Browse works', path: '/browse' },
     { name: 'Contact us', path: '/contact' },
