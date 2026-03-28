@@ -4,10 +4,12 @@ import { FeaturedProperties } from '../components/FeaturedProperties';
 import { Footer } from '../components/Footer';
 import { Hero } from '../components/Hero';
 import { Vision } from '../components/Vision';
+import { Navbar } from '../layout/Navbar';
 
 export const Home = () => {
   return (
     <main>
+      <Navbar />
       <Hero />
       <Vision />
       <FeaturedProperties />

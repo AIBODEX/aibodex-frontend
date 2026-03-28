@@ -31,7 +31,7 @@ export const Navbar = () => {
 
       {/* CTA Button */}
       <Link
-        to="/book-demo"
+        to="/signup"
         className="bg-[#00C48C] hover:bg-[#00A072] text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg flex-shrink-0 text-sm md:text-base"
       >
         Book demo
