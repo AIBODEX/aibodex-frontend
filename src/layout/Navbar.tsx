@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Logo } from '../components/Logo';
+import Logo  from '../assets/logo.svg';
+
 
 export const Navbar = () => {
   const navLinks = [
@@ -13,7 +14,7 @@ export const Navbar = () => {
     <nav className="w-full bg-white border-b border-gray-100 py-4 px-6 md:px-12 flex items-center justify-between shadow-sm sticky top-0 z-50">
       {/* Logo Section */}
       <Link to="/" className="flex-shrink-0 hover:opacity-90 transition-opacity">
-        <Logo />
+        <img src={Logo} alt="aibodex" className='w-22'/>
       </Link>
 
       {/* Navigation Links - Hidden on mobile, visible on medium+ screens */}

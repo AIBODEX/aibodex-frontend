@@ -1,22 +1,11 @@
-import { CTA } from '../components/CTA';
-import { DreamHome } from '../components/DreamHome';
-import { FeaturedProperties } from '../components/FeaturedProperties';
-import { Footer } from '../components/Footer';
-import { Hero } from '../components/Hero';
-import { Vision } from '../components/Vision';
-import { Navbar } from '../layout/Navbar';
+import Navbar2 from "../layout/Navbar2"
 
-export const Home = () => {
+const Home = () => {
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <Vision />
-      <FeaturedProperties />
-      <CTA />
-      <DreamHome />
-      <Footer />
-    </main>
+    <div>
+        <Navbar2 />
+    </div>
+  )
+}
 
-  );
-};
+export default Home
