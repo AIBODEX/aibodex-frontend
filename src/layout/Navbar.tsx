@@ -16,7 +16,7 @@ export const Navbar = () => {
     <nav className="w-full bg-white border-b border-gray-100 py-4 px-5 md:px-12 flex items-center shadow-sm sticky top-0 z-50">
       {/* Logo Section */}
       <Link to="/" className="flex-shrink-0 hover:opacity-90 transition-opacity">
-        <img src={Logo} alt="aibodex" className="w-22 md:w-10" />
+        <img src={Logo} alt="aibodex" className="w-20 md:w-22" />
       </Link>
 
       {/* Navigation Links - Desktop */}
@@ -31,6 +31,12 @@ export const Navbar = () => {
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#00C48C] transition-all group-hover:w-full"></span>
           </Link>
         ))}
+         <Link
+          to="/signup"
+          className="bg-[#00C48C] hover:bg-[#00A072] text-white px-5 md:px-6 py-2 md:py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg flex-shrink-0 text-sm md:text-base"
+        >
+          Book demo
+        </Link>
       </div>
 
       {/* CTA Button and Hamburger - Mobile Container */}

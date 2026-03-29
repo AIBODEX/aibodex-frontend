@@ -4,6 +4,7 @@ import { Landing } from './pages/Landing';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
 import Home from './pages/Home';
+import PropertySearch from './pages/PropertySearch';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/login" element={<Login />} />
 
           <Route path="/home" element={<Home />} />
+          <Route path="/property-search" element={<PropertySearch />} />
 
 
         </Routes>

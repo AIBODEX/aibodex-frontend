@@ -51,7 +51,7 @@ const Navbar2 = () => {
             {/* List Property Button */}
             <div className="flex items-center space-x-4">
               <Link
-                to="/list-property"
+                to="/property-search"
                 className="bg-[#10b981] hover:bg-[#059669] text-white px-5 py-2.5 rounded text-sm font-medium transition-colors shadow-sm whitespace-nowrap"
               >
                 List Property
@@ -126,7 +126,7 @@ const Navbar2 = () => {
                   <div className="text-sm font-normal text-gray-500">jane@example.com</div>
                 </div>
               </div>
-              <Link to="/list-property" className="block w-full text-center bg-[#10b981] hover:bg-[#059669] text-white px-4 py-3.5 rounded-lg font-medium transition-colors shadow-sm">
+              <Link to="/property-search" className="block w-full text-center bg-[#10b981] hover:bg-[#059669] text-white px-4 py-3.5 rounded-lg font-medium transition-colors shadow-sm">
                 List Property
               </Link>
             </div>
