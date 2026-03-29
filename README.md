@@ -1,73 +1,115 @@
-# React + TypeScript + Vite
+# 🏠 AiBodex Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AiBodex is an AI-powered real estate platform designed to simplify **property verification and intelligent property recommendations**. This frontend application provides a seamless, responsive interface for users to explore, verify, and manage real estate assets with confidence.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## React Compiler
+* **React** – Component-based UI development
+* **TypeScript** – Type safety and scalable codebase
+* **Tailwind CSS** – Utility-first styling for rapid UI development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* 🔍 AI-powered property search and recommendations
+* 🛡️ Property verification interface
+* 👤 User authentication and dashboard
+* 📊 Task and property management UI
+* 📱 Fully responsive design (mobile-first)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📂 Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+│── components/      # Reusable UI components
+│── pages/           # Application pages (Home, Dashboard, etc.)
+│── hooks/           # Custom React hooks
+│── services/        # API calls and integrations
+│── context/         # Global state management
+│── assets/          # Images, icons, etc.
+│── App.tsx          # Main app entry
+│── main.tsx         # React DOM entry
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Installation & Setup
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/aibodex-frontend.git
+cd aibodex-frontend
 ```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🌐 Environment Variables
+
+Create a `.env` file in the root directory:
+
+```
+VITE_API_BASE_URL=your_backend_api_url
+```
+
+---
+
+## 📦 Build
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+---
+
+## 🚀 Deployment
+
+This project is optimized for deployment on platforms like:
+
+* Vercel
+* Netlify
+
+Make sure to configure routing correctly for SPA behavior.
+
+---
+
+## 🤝 Contributors
+
+* [Levi-Ikechukwu](https://github.com/Levi-ikechukwu)
+* [Chioma533](https://github.com/Chioma533)
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 💡 About AiBodex
+
+AiBodex aims to eliminate fraud and inefficiencies in real estate by leveraging AI to:
+
+* Verify property authenticity
+* Provide smart recommendations
+* Improve decision-making for buyers and investors
+
+---
