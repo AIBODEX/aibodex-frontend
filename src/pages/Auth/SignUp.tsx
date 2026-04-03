@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import roundImage from '../assets/round.png';
+import roundImage from '../../assets/round.png';
 
-const Login = () => {
+const SignUp = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 sm:p-8 font-sans">
       <div className="max-w-5xl w-full bg-white rounded-[2rem] shadow-xl overflow-hidden flex flex-col md:flex-row p-2">
@@ -31,15 +31,32 @@ const Login = () => {
         {/* Right Section - Form */}
         <div className="w-full md:w-1/2 px-6 py-12 md:px-16 md:py-12 flex flex-col justify-center">
           <div className="max-w-md w-full mx-auto">
-            <h1 className="text-3xl font-normal tracking-tight text-gray-900 mb-2">Welcome back</h1>
+            <h1 className="text-3xl font-normal tracking-tight text-gray-900 mb-2">Create an account</h1>
             <p className="text-gray-500 mb-8 text-sm">
-              Don't have an account?{' '}
-              <Link to="/signup" className="text-[#10b981] hover:text-[#059669] hover:underline transition-colors">
-                Sign up
+              Already have an account?{' '}
+              <Link to="/login" className="text-[#10b981] hover:text-[#059669] hover:underline transition-colors">
+                Log in
               </Link>
             </p>
 
             <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="First name"
+                    className="w-full px-4 py-3 text-sm rounded-lg border border-gray-200 focus:outline-none focus:ring-1 focus:ring-[#10b981] focus:border-[#10b981] transition-colors placeholder:text-gray-400"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Last name"
+                    className="w-full px-4 py-3 text-sm rounded-lg border border-gray-200 focus:outline-none focus:ring-1 focus:ring-[#10b981] focus:border-[#10b981] transition-colors placeholder:text-gray-400"
+                  />
+                </div>
+              </div>
+
               <div>
                 <input
                   type="email"
@@ -51,13 +68,27 @@ const Login = () => {
               <div>
                 <input
                   type="password"
-                  placeholder="Enter Password"
+                  placeholder="Set up a password"
                   className="w-full px-4 py-3 text-sm rounded-lg border border-gray-200 focus:outline-none focus:ring-1 focus:ring-[#10b981] focus:border-[#10b981] transition-colors placeholder:text-gray-400"
                 />
               </div>
 
-              <div className="flex items-start mt-2 ">
-                <Link to="/forgot-password" className='text-[#10b981] mb-5 hover:text-[#059669] hover:underline text-sm capitalize transition-colors'>forgot password?</Link>
+              <div className="flex items-start mt-2">
+                <div className="flex items-center h-5">
+                  <input
+                    id="terms"
+                    type="checkbox"
+                    className="w-4 h-4 rounded border-gray-300 accent-[#10b981] cursor-pointer"
+                  />
+                </div>
+                <div className="ml-3 text-sm flex-1">
+                  <label htmlFor="terms" className="text-gray-500">
+                    By signing up, i agree to the{' '}
+                    <button type="button" className="text-[#10b981] hover:text-[#059669] hover:underline transition-colors">
+                      Terms & Conditions
+                    </button>
+                  </label>
+                </div>
               </div>
 
               <button
@@ -73,7 +104,7 @@ const Login = () => {
                 <div className="w-full border-t border-gray-200"></div>
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="bg-white px-4 text-gray-500">Or continue with</span>
+                <span className="bg-white px-4 text-gray-500">Or register with</span>
               </div>
             </div>
 
@@ -102,4 +133,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;

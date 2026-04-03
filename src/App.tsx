@@ -1,16 +1,14 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-// import { Navbar } from './layout/Navbar';
 import { Landing } from './pages/Landing';
-import SignUp from './pages/SignUp';
-import Login from './pages/Login';
+import SignUp from './pages/Auth/SignUp';
+import Login from './pages/Auth/Login';
 import Home from './pages/Home';
-import PropertySearch from './pages/PropertySearch';
-
+import PropertySearch from './pages/User/PropertySearch';
+import PropertyDetails from './pages/User/PropertyDetails'
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-white text-gray-900 font-sans">
-          {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Landing />} />
            <Route path="/signup" element={<SignUp />} />
@@ -18,7 +16,7 @@ function App() {
 
           <Route path="/home" element={<Home />} />
           <Route path="/property-search" element={<PropertySearch />} />
-
+          <Route path="/property-details" element={<PropertyDetails />} />
 
         </Routes>
       </div>

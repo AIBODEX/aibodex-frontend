@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Navbar2 from "../layout/Navbar2";
-import { mockProperties } from "../data/mockProperties";
-import { PropertySidebar, type FilterState } from "../components/property-search/PropertySidebar";
-import { PropertyGrid } from "../components/property-search/PropertyGrid";
+import Navbar2 from "../../layout/Navbar2";
+import { mockProperties } from "../../data/mockProperties";
+import { PropertySidebar, type FilterState } from "../../components/property-search/PropertySidebar";
+import { PropertyGrid } from "../../components/property-search/PropertyGrid";
 
 export default function PropertySearch() {
   const [properties, setProperties] = useState(mockProperties);
