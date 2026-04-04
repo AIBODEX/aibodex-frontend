@@ -7,6 +7,9 @@ import PropertySearch from './pages/User/PropertySearch';
 import PropertyDetails from './pages/User/PropertyDetails'
 import UserDashboard from './pages/User/UserDashboard';
 import SavedProperties from './pages/User/SavedProperties';
+import Messages from './pages/User/Messages';
+import Chat from './pages/User/Chat';
+import Profile from './pages/User/Profile';
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
           <Route path="/property-details" element={<PropertyDetails />} />
           <Route path="/user-dashboard" element={<UserDashboard />} />
           <Route path="/saved-properties" element={<SavedProperties />} />
+          <Route path="/messages" element={<Messages />} />
+          <Route path="/messages/chat" element={<Chat />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
     </Router>

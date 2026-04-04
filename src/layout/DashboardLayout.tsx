@@ -3,8 +3,10 @@ import Sidebar from "../components/dashboard/Sidebar";
 import Logo from '../assets/logo.svg';
 export const DashboardLayout = ({
   children,
+  noPadding = false,
 }: {
   children: React.ReactNode;
+  noPadding?: boolean;
 }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -36,8 +38,8 @@ export const DashboardLayout = ({
         </button>
       </div>
 
-      <main className="lg:ml-[260px] min-h-screen">
-        <div className="p-4 sm:p-8 md:p-10 max-w-[1400px] mx-auto">
+      <main className="lg:ml-[260px] min-h-screen flex flex-col">
+        <div className={`${noPadding ? '' : 'p-4 sm:p-8 md:p-10 max-w-[1400px] mx-auto'} flex-1 flex flex-col`}>
           {children}
         </div>
       </main>

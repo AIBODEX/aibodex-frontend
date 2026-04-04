@@ -1,6 +1,10 @@
 import { Search } from 'lucide-react';
 
-const DashboardHeader = () => {
+interface DashboardHeaderProps {
+  searchPlaceholder?: string;
+}
+
+const DashboardHeader = ({ searchPlaceholder = "Search any property" }: DashboardHeaderProps) => {
   return (
     <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
       
@@ -25,7 +29,7 @@ const DashboardHeader = () => {
           <Search className="w-4 h-4 text-gray-400 absolute left-4 top-1/2 transform -translate-y-1/2" />
           <input 
             type="text" 
-            placeholder="Search any property" 
+            placeholder={searchPlaceholder} 
             className="w-full pl-10 pr-4 py-3 bg-[#f8f9fa] border border-gray-100 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-[#11B880] transition-colors"
           />
         </div>
