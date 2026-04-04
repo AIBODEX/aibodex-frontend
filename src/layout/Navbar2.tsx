@@ -117,11 +117,13 @@ const Navbar2 = () => {
             <div className="mt-6 pt-6 border-t border-gray-100">
               <div className="flex items-center px-3 mb-5">
                 <div className="flex-shrink-0">
+                  <Link to={"/user-dashboard"}>
                   <img 
                     src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80" 
                     alt="User Profile" 
                     className="h-12 w-12 rounded-full object-cover border-2 border-white shadow-sm"
                   />
+                  </Link>
                 </div>
                 <div className="ml-4">
                   <div className="text-base font-medium text-gray-900">Jane Doe</div>
