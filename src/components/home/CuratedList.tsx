@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const mockProperties = [
   {
@@ -111,7 +112,9 @@ const CuratedList = () => {
 
                 <div className="flex items-center justify-between mt-6">
                   <button className="px-4 py-1.5 border border-gray-200 bg-white rounded-full text-[13px] font-medium text-gray-500 hover:border-[#10b981] hover:text-[#10b981] transition-colors">
+                    <Link to={"/property-details"}>
                     View Property
+                    </Link>
                   </button>
                   
                   <div className="flex items-center gap-3 pr-2">

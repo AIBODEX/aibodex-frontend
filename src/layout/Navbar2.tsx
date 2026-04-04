@@ -13,7 +13,7 @@ const Navbar2 = () => {
           {/* Logo Section */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center">
-              <img src={Logo} alt="Aibodex Logo" className="w-28 md:w-32 lg:w-36 h-auto" />
+              <img src={Logo} alt="Logo" className="w-28 md:w-32 lg:w-36 h-auto" />
             </Link>
           </div>
 
@@ -59,11 +59,13 @@ const Navbar2 = () => {
 
               {/* Avatar Profile */}
               <button className="flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-[#10b981]/50 rounded-full overflow-hidden shrink-0 border border-gray-200 hover:border-gray-300 transition-all shadow-sm">
+              <Link to="/user-dashboard">
                 <img 
                   src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80" 
                   alt="User avatar" 
                   className="h-10 w-10 object-cover"
                 />
+                </Link>
               </button>
             </div>
           </div>

@@ -5,6 +5,9 @@ import Login from './pages/Auth/Login';
 import Home from './pages/Home';
 import PropertySearch from './pages/User/PropertySearch';
 import PropertyDetails from './pages/User/PropertyDetails'
+import UserDashboard from './pages/User/UserDashboard';
+import SavedProperties from './pages/User/SavedProperties';
+
 function App() {
   return (
     <Router>
@@ -17,7 +20,8 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/property-search" element={<PropertySearch />} />
           <Route path="/property-details" element={<PropertyDetails />} />
-
+          <Route path="/user-dashboard" element={<UserDashboard />} />
+          <Route path="/saved-properties" element={<SavedProperties />} />
         </Routes>
       </div>
     </Router>

@@ -14,9 +14,9 @@ const PropertyDetails = () => {
     <div className="min-h-screen bg-white">
       <Navbar2 />
       
-      <main className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <main className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-16 py-4 md:py-6">
         {/* Top Header: Breadcrumbs & Actions */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+        <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 md:mb-6 gap-4 md:gap-0">
           <Breadcrumbs />
           <PropertyActions />
         </div>
@@ -36,7 +36,7 @@ const PropertyDetails = () => {
           </div>
 
           {/* Right Column (Contact Agent Form) */}
-          <div className="w-full lg:w-[35%] mt-8 lg:mt-12">
+          <div className="w-full lg:w-[30%] mt-8 lg:mt-12">
             <div className="sticky top-24">
               <ContactAgentForm />
             </div>

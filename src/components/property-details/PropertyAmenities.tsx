@@ -27,11 +27,11 @@ const PropertyAmenities = () => {
   return (
     <div className="mt-12">
       <h2 className="text-[22px] font-semibold mb-6 text-gray-900">Amenities</h2>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 md:gap-y-6 gap-x-4">
         {amenities.map((item, index) => (
           <div key={index} className="flex items-center space-x-3">
             <CheckIcon />
-            <span className="text-gray-500 font-light text-[15px] whitespace-nowrap">{item}</span>
+            <span className="text-gray-500 font-light text-[15px]">{item}</span>
           </div>
         ))}
       </div>

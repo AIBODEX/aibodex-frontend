@@ -1,13 +1,14 @@
-import { Logo } from './Logo';
+import Logo  from '../assets/logo.svg';
+
 
 export const Footer = () => {
   return (
-    <footer className="w-full bg-white pt-20 pb-10 px-4 md:px-8 border-t border-gray-100">
+    <footer className="w-full bg-white pt-20 pb-10 px-6 md:px-12 border-t border-gray-100">
       <div className="max-w-7xl mx-auto">
         
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
-          <Logo />
+          <img src={Logo} alt="Logo" />
           <button className="border border-gray-200 text-[#111827] px-8 py-2.5 rounded-full font-medium hover:bg-gray-50 transition-colors">
             Contact Us
           </button>

@@ -3,7 +3,7 @@ const ImageGallery = () => {
   return (
     <div className="flex flex-col md:flex-row gap-4 mt-2">
       {/* Main Image */}
-      <div className="w-full md:w-1/2 h-[300px] md:h-[500px]">
+      <div className="w-full md:w-1/2 h-[200px] md:h-[400px]">
         <img 
           src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80" 
           alt="Main Property View" 
@@ -12,7 +12,7 @@ const ImageGallery = () => {
       </div>
       
       {/* 4 small images */}
-      <div className="w-full md:w-1/2 grid grid-cols-2 gap-4 h-[300px] md:h-[500px]">
+      <div className="w-full md:w-1/2 grid grid-cols-2 gap-4 h-[200px] md:h-[400px]">
         <img 
           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80" 
           alt="Kitchen" 
