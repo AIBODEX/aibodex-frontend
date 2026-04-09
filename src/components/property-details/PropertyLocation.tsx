@@ -1,4 +1,4 @@
-import { Target } from 'lucide-react';
+import { Target } from 'lucide-react'; // Can use a pin or target icon
 
 const PropertyLocation = () => {
   return (
@@ -11,19 +11,9 @@ const PropertyLocation = () => {
           className="w-full h-full object-cover opacity-30 mix-blend-multiply grayscale"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="flex flex-col items-center transition-transform hover:scale-105 cursor-pointer transform -translate-y-4">
-            
-            {/* Red Pin Locator */}
-            <div className="flex flex-col items-center relative z-10 drop-shadow-sm">
-              <div className="w-6 h-6 border-[5px] border-[#E11D48] rounded-full bg-white relative z-10"></div>
-              <div className="w-[3px] h-5 bg-[#E11D48] -mt-1 relative z-0"></div>
-            </div>
-
-            {/* Pill Label */}
-            <div className="bg-white px-5 py-3 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-50 flex items-center space-x-2 -mt-1 z-20">
-              <Target className="w-4 h-4 text-gray-400" />
-              <span className="text-[14px] text-gray-600 font-medium">Freedom Way, Lekki Phase 1,</span>
-            </div>
+          <div className="bg-white px-5 py-3 rounded-full shadow-[0_4px_20px_rgb(0,0,0,0.08)] flex items-center space-x-3 transition-transform hover:scale-105 cursor-pointer">
+            <Target className="w-5 h-5 text-gray-400" />
+            <span className="text-[15px] text-gray-600 font-medium">Freedom Way, Lekki Phase 1,</span>
           </div>
         </div>
       </div>

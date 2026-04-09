@@ -15,3 +15,7 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+.input-box{
+    @apply w-full flex justify-between relative gap-3 text-sm text-black 
+}
