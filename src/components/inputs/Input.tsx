@@ -26,7 +26,7 @@ const Input = ({ value, onChange, placeholder, type = "text" }: InputProps) => {
       />
 
       {type === "password" && (
-        <span className='absolute left-[90%] top-3'>
+        <span className='absolute left-[85%] md:left-[90%]  top-3'>
           {showPassword ? (
             <FaRegEye
               size={22}
