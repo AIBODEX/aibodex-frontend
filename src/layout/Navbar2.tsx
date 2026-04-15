@@ -41,7 +41,7 @@ const Navbar2 = () => {
             <Link to="/rent" className="text-gray-700 hover:text-[#10b981] font-medium text-[15px] transition-colors">
               Rent
             </Link>
-            <Link to="/agents" className="text-gray-700 hover:text-[#10b981] font-medium text-[15px] transition-colors">
+            <Link to="/agent-dashboard" className="text-gray-700 hover:text-[#10b981] font-medium text-[15px] transition-colors">
               Agents
             </Link>
             

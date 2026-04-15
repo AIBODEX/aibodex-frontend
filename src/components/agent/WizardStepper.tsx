@@ -48,11 +48,11 @@ const WizardStepper = ({ currentStep }: WizardStepperProps) => {
       {/* Stepper Top Row */}
       <div className="w-full max-w-4xl mx-auto flex items-center justify-between relative mb-12">
         {/* Background Grey Line */}
-        <div className="absolute left-0 right-0 top-[24px] h-[2px] bg-gray-200 -z-10" />
+        <div className="absolute left-0 right-0 top-[24px] h-[2px] bg-gray-200 z-0" />
         
         {/* Active Green Line */}
         <div 
-          className="absolute left-0 top-[24px] h-[2px] bg-[#11B880] -z-10 transition-all duration-500 ease-in-out"
+          className="absolute left-0 top-[24px] h-[2px] bg-[#11B880] z-0 transition-all duration-500 ease-in-out"
           style={{ width: `${((currentStep - 1) / (steps.length - 1)) * 100}%` }}
         />
 
